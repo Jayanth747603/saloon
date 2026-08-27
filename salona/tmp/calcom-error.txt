@@ -1,0 +1,1 @@
+Error: Failed to fetch event types v2: 404 {"status":"error","timestamp":"2026-03-28T07:35:24.917Z","path":"/v2/event-types","error":{"code":"NotFoundException","message":"Cannot GET /v2/event-types","details":{"message":"Cannot GET /v2/event-types","error":"Not Found","statusCode":404}}}

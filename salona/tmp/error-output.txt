@@ -1,0 +1,4 @@
+{
+  "error": "Your Cal.com Event Type was found but appears to be unpublished or incomplete. Please finish setting it up in your Cal.com dashboard.",
+  "setupRequired": true
+}
