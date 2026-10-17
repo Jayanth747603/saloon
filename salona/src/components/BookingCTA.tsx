@@ -9,11 +9,11 @@ export default function BookingCTA() {
     const { openBookingModal } = useBooking()
 
     return (
-        <section id="booking" className="relative py-32 bg-primary flex items-center justify-center overflow-hidden">
+        <section id="booking" className="relative py-24 md:py-32 bg-primary flex items-center justify-center overflow-hidden w-full">
             {/* Parallax Background Image Setup */}
             <div className="absolute inset-0 z-0">
                 <div
-                    className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2672&auto=format&fit=crop')] bg-cover bg-center bg-fixed opacity-30 mix-blend-luminosity scale-105"
+                    className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2672&auto=format&fit=crop')] bg-cover bg-center md:bg-fixed opacity-30 mix-blend-luminosity scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/40" />
             </div>
@@ -30,7 +30,7 @@ export default function BookingCTA() {
                         <Calendar className="w-4 h-4" /> Call To Action
                     </span>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-10 leading-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-10 leading-tight">
                         Book your spot today & step out looking your best.
                     </h2>
 

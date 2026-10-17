@@ -34,7 +34,7 @@ const servicesList = [
 
 export default function Services() {
     return (
-        <section id="services" className="py-24 bg-primary text-white relative">
+        <section id="services" className="py-24 bg-primary text-white relative overflow-hidden w-full">
             <div className="container mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Left - Image */}
@@ -43,7 +43,7 @@ export default function Services() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="relative h-[600px] lg:h-[800px] w-full rounded-3xl overflow-hidden group"
+                        className="relative h-[400px] sm:h-[500px] lg:h-[800px] w-full rounded-3xl overflow-hidden group"
                     >
                         <Image
                             src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2670&auto=format&fit=crop"

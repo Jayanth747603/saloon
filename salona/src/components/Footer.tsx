@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Send } from "lucide-react"
 
 export default function Footer() {
     return (
-        <footer id="contact" className="bg-primary text-gray-300 border-t border-white/5 pt-20 pb-10">
+        <footer id="contact" className="bg-primary text-gray-300 border-t border-white/5 pt-20 pb-10 overflow-hidden w-full">
             <div className="container mx-auto px-4 md:px-8">
 
                 {/* Newsletter Section */}

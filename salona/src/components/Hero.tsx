@@ -19,9 +19,9 @@ export default function Hero() {
     }
 
     return (
-        <section id="home" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-primary">
-            {/* Background Image Setup for Mobile & Right Side Desktop */}
-            <div className="absolute inset-0 z-0 lg:w-[55%] lg:left-auto lg:right-0">
+        <section id="home" className="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-primary w-full">
+            {/* Background Image — full bleed on all sizes */}
+            <div className="absolute inset-0 z-0">
                 <motion.div
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -32,17 +32,20 @@ export default function Hero() {
                         src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=2672&auto=format&fit=crop"
                         alt="Barber Grooming"
                         fill
-                        className="object-cover"
+                        className="object-cover object-[70%_center] lg:object-center"
                         priority
                     />
-                    {/* Gradients to blend image cleanly into background */}
-                    <div className="absolute inset-0 bg-primary/80 lg:bg-transparent" />
-                    <div className="hidden lg:block absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-primary to-transparent" />
+                    {/* Mobile: strong dark overlay so text is legible over full-width image */}
+                    <div className="absolute inset-0 bg-primary/75 lg:bg-transparent" />
+                    {/* Desktop: fade left half to primary so text side is clean */}
+                    <div className="hidden lg:block absolute inset-y-0 left-0 w-[60%] bg-gradient-to-r from-primary via-primary/90 to-transparent" />
+                    {/* Bottom fade on mobile to blend cleanly into next section */}
+                    <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-primary to-transparent lg:hidden" />
                 </motion.div>
             </div>
 
-            <div className="container mx-auto px-4 md:px-8 relative z-10">
-                <div className="lg:w-1/2 max-w-2xl">
+            <div className="container mx-auto px-4 md:px-8 relative z-10 w-full">
+                <div className="lg:w-1/2 max-w-2xl w-full">
                     <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="space-y-6">
                         <motion.span
                             variants={textVariants}
@@ -51,7 +54,7 @@ export default function Hero() {
                             -5% off your first visit
                         </motion.span>
 
-                        <motion.h1 variants={textVariants} className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                        <motion.h1 variants={textVariants} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                             Sharp cuts
                             <br />
                             <span className="text-gold">Smooth shaves</span>
@@ -59,11 +62,11 @@ export default function Hero() {
                             Timeless style
                         </motion.h1>
 
-                        <motion.p variants={textVariants} className="text-gray-text text-lg md:text-xl max-w-lg font-light leading-relaxed">
+                        <motion.p variants={textVariants} className="text-gray-text text-base md:text-xl max-w-lg font-light leading-relaxed">
                             Experience modern barbering where classic craftsmanship meets contemporary style.
                         </motion.p>
 
-                        <motion.div variants={textVariants} className="flex items-center space-x-2 text-white pb-4">
+                        <motion.div variants={textVariants} className="flex items-center space-x-2 text-white pb-4 flex-wrap gap-y-2">
                             <div className="flex text-gold">
                                 {"★★★★★".split("").map((star, i) => <span key={i}>{star}</span>)}
                             </div>

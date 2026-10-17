@@ -30,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth overflow-x-hidden">
       <body
-        className={`${inter.variable} ${poppins.variable} font-body bg-primary text-white antialiased overflow-x-hidden`}
+        className={`${inter.variable} ${poppins.variable} font-body bg-primary text-white antialiased overflow-x-hidden w-full`}
       >
         <BookingProvider>
           {children}
