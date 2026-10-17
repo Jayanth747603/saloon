@@ -50,9 +50,7 @@ export default function BookingCTA() {
                         </a>
                     </div>
 
-                    <p className="text-gray-text hover:text-white transition-colors duration-300">
-                        Book your slot through <span className="text-white border-b border-white/30 pb-0.5 font-medium cursor-pointer hover:border-gold hover:text-gold transition-colors">Google Calendar</span> or <span className="text-white border-b border-white/30 pb-0.5 font-medium cursor-pointer hover:border-gold hover:text-gold transition-colors">Apple Calendar</span>
-                    </p>
+
                 </motion.div>
             </div>
         </section>

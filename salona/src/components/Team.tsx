@@ -18,8 +18,8 @@ const teamMembers = [
         role: "Styling Expert",
         specialty: "Beard Sculpting & Design",
         experience: "9 yrs exp.",
-        // Stylish male professional portrait
-        image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2600&auto=format&fit=crop",
+        // Professional male barber / stylist portrait
+        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop&face",
     },
     {
         name: "Sameer",
